@@ -69,4 +69,3 @@
 # - OPENBLAS_NUM_THREADS=1   Disable multi-threading of OpenBLAS
 export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
 export SPARK_HOME=/usr/local/spark
-export SPARK_LOG_DIR=/usr/feiwang/spark/logs

@@ -45,8 +45,8 @@
 
 
 # Set HADOOP_HOME to point to a specific hadoop install directory
-export HADOOP_HOME=/usr/local/hadoop
-export HIVE_CONF_DIR=/usr/local/hive/conf
+export HADOOP_HOME=/home/feiwang/asplos/hadoop
+export HIVE_CONF_DIR=/home/feiwang/asplos/hive/conf
 
 # Hive Configuration Directory can be controlled by:
 # export HIVE_CONF_DIR=

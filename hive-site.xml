@@ -35,12 +35,12 @@
   </property>
   <property>
        <name>javax.jdo.option.ConnectionUserName</name>
-       <value>feiwang</value>
+       <value>hive</value>
        <description>username to use againstmetastore database</description>
   </property>
   <property>
        <name>javax.jdo.option.ConnectionPassword</name>
-       <value>feiwang</value>
+       <value>hive</value>
        <description>password to use againstmetastore database</description>
   </property>
   <property>
@@ -73,12 +73,12 @@
   </property>
   <property>
     <name>hive.exec.local.scratchdir</name>
-    <value>/usr/local/hive_log/iotmp</value>
+    <value>/usr/feiwang/localscratch</value>
     <description>Local scratch space for Hive jobs</description>
   </property>
   <property>
     <name>hive.downloaded.resources.dir</name>
-    <value>/usr/local/hive_log/iotmp</value>
+    <value>/usr/feiwang/hive/resources</value>
     <description>Temporary local directory for added resources in the remote file system.</description>
   </property>
   <property>
@@ -1321,7 +1321,7 @@
   </property>
   <property>
     <name>hive.querylog.location</name>
-    <value>/usr/local/hive/logs</value>
+    <value>/usr/feiwang/hive/joblogs</value>
     <description>Location of Hive run time structured log file</description>
   </property>
   <property>
@@ -2395,7 +2395,7 @@
   </property>
   <property>
     <name>hive.support.concurrency</name>
-    <value>false</value>
+    <value>true</value>
     <description>
       Whether Hive supports concurrency control or not. 
       A ZooKeeper instance must be up and running when using zookeeper Hive lock manager 
@@ -2434,7 +2434,7 @@
   </property>
   <property>
     <name>hive.zookeeper.quorum</name>
-    <value/>
+    <value>node59,node60,node61,node63,node64</value>
     <description>
       List of ZooKeeper servers to talk to. This is needed for: 
       1. Read/write locks - when hive.lock.manager is set to 
